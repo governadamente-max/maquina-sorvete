@@ -10,14 +10,29 @@ Landing page de venda da máquina de sorvete LSD-425 (Petrolina/PE e Juazeiro/BA
 | `foto.jpg` | Foto real da máquina — também usada na prévia do link |
 | `video.mp4` | Vídeo da máquina funcionando |
 
+## Endereço da página
+
+https://governadamente-max.github.io/maquina-sorvete/
+
 ## Como publicar no GitHub Pages
 
-1. No GitHub, crie um repositório **público** (ex: `maquina-sorvete`).
-2. Suba os arquivos desta pasta (veja os comandos abaixo).
+1. No GitHub, crie um repositório **público** chamado `maquina-sorvete`, **sem** marcar
+   "Add a README file" (o repositório precisa estar vazio).
+2. Suba os arquivos desta pasta:
+
+   ```
+   git remote add origin https://github.com/governadamente-max/maquina-sorvete.git
+   git push -u origin main
+   ```
+
 3. No repositório: **Settings → Pages**.
 4. Em *Source*, escolha **Deploy from a branch**, branch **main**, pasta **/ (root)** e salve.
-5. Em 1–2 minutos a página fica no ar em:
-   `https://SEU-USUARIO.github.io/maquina-sorvete/`
+5. Em 1–2 minutos a página fica no ar no endereço acima.
+
+> O nome do repositório precisa ser exatamente `maquina-sorvete`. Se você usar outro nome,
+> troque também as 4 linhas do `index.html` que começam com `<link rel="canonical"`,
+> `<meta property="og:url"`, `<meta property="og:image"` e `<meta name="twitter:image"` —
+> senão a prévia do link (imagem que aparece no WhatsApp e no Facebook) não vai funcionar.
 
 ## Contato da página
 
